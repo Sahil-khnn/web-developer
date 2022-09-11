@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Metamorphous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
 
 :root {
   --bg-black-900: #f2f2fc;
-  --skin-color: #ec1839;
+  --skin-color: #fa5b0f;
   --bg-black-100: #fdf9ff;
   --bg-black-50: #e8dfec;
   --text-black-900: #302e4d;
@@ -20,7 +22,8 @@ body.dark {
 body {
   line-height: 1.5;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Open Sans", sans-serif;
 }
 * {
   margin: 0;
@@ -158,16 +161,18 @@ ul {
 
 .aside .logo a {
   color: var(--text-black-900);
-  font-weight: 700;
+  font-weight: 500;
   padding: 15px 20px;
   font-size: 30px;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   position: relative;
 }
 
 .aside .logo a span {
-  font-family: "Clicker Script", cursive;
-  font-size: 40px;
+  font-family: "Metamorphous", cursive;
+  /* font-family: "Clicker Script", cursive; */
+  font-size: 45px;
+  font-style: italic;
 }
 
 .aside .logo a::before {
@@ -271,6 +276,7 @@ ul {
 .home .home-info {
   flex: 0 0 60%;
   max-width: 60%;
+  margin-top: 40px;
 }
 .home .home-img {
   flex: 0 0 40%;
@@ -287,7 +293,7 @@ ul {
   border-left: 10px solid var(--skin-color);
   height: 80px;
   width: 80px;
-  left: -20px;
+  left: 20px;
   top: -40px;
 }
 
@@ -325,7 +331,7 @@ h3.my-profession {
 
 .home-info p {
   font-size: 20px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   color: var(--text-black-700);
 }
 
@@ -613,6 +619,17 @@ h3.my-profession {
   margin-bottom: 30px;
 }
 
+.porfolio .portfolio-heading h2 {
+  color: var(--text-black-900);
+  font-weight: 500;
+}
+
+.portfolio .portfolio-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  margin-bottom: 30px;
+}
+
 .portfolio .portfolio-item .por-heading {
   text-align: center;
   padding-top: 10px;
@@ -637,9 +654,9 @@ h3.my-profession {
   cursor: pointer;
 }
 
-.portfolio .portfolio-item-inner .porfolio-img img {
+.portfolio .portfolio-item-inner .portfolio-img img {
   width: 100%;
-  display: block;
+  /* display: block; */
   background-position: 100%;
   margin-bottom: 15px;
 }
