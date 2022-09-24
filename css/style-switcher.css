@@ -36,6 +36,10 @@
   line-height: 40px;
 }
 
+.style-switcher h4 {
+  color: var(--text-black-900);
+}
+
 .style-switcher .style-switcher-toggler {
   top: 0;
 }
