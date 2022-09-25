@@ -26,10 +26,11 @@ function setActiveStyle(color) {
 
 const dayNight = document.querySelector(".day-night");
 dayNight.addEventListener("click", () => {
-  dayNight.querySelector("i").classList.toggle("fa-moon");
+  dayNight.querySelector("i").classList.toggle("fa-sun");
   document.body.classList.toggle("dark");
 });
-window.addEventListener("laod", () => {
+window.addEventListener("load", () => {
+  document.body.classList.add("dark");
   if (document.body.classList.contains("dark")) {
     dayNight.querySelector("i").classList.add("fa-sun");
   } else {
